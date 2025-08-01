@@ -18,7 +18,11 @@ people.forEach((people) => {
 const numbers = [2, 8, 4, 7, 2, 87];
 
 // Crea un nuovo array in cui tutti i numeri siano incrementati di 1
-
+const newArray = []
+for (let i = 0; i < numbers.length; i++) {
+  newArray.push(numbers[i] + 1);
+}
+console.log(newArray);
 
 const posts = [
   { author: 'Marco', date: '12/3/2021', content: 'lorem ipsum...' },
@@ -29,11 +33,22 @@ const posts = [
 
 // Crea un nuovo array coi nomi di tutti gli autori
 
+posts.forEach((posts) => {
+  console.log(posts.author);
+});
+
 
 
 const nums = [2, 8, 4, 7, 12, 87];
 
 // Crea un array a partire dall'array nums, che abbia solo i numeri pari
+const newNums = []
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] % 2 === 0) {
+    newNums.push(nums[i]);
+  }
+};
+console.log(newNums);
 
 
 const pencils = [

@@ -65,7 +65,18 @@ const pencils = [
 ];
 
 // A partire dall'array fornito, crea due array. Uno con le matite lunghe almeno 15cm. L'altro con le restanti.
+const newLongPencils = []
+const newShortPencils = []
 
+for (let i = 0; i < pencils.length; i++) {
+  if (pencils[i].sizeInCm >= 15) {
+    newLongPencils.push(pencils[i]);
+  } else {
+    newShortPencils.push(pencils[i]);
+  }
+}
+console.log(newLongPencils);
+console.log(newShortPencils);
 
 
 const students = [

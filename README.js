@@ -38,7 +38,6 @@ posts.forEach((posts) => {
 });
 
 
-
 const nums = [2, 8, 4, 7, 12, 87];
 
 // Crea un array a partire dall'array nums, che abbia solo i numeri pari
@@ -102,6 +101,8 @@ const students = [
 
 // Recupera i dati dello studente con id 2
 
+const student_id = students.find(s => s.id === 2);
+console.log(student_id);
 
 const students_2 = [
   {
@@ -116,12 +117,15 @@ const students_2 = [
     age: 34,
     classroom: '4A'
   },
-  //{
-  //id: 3
-  //name: 'Luigi Banzi',
-  //age: 33,
-  //classroom: '5B'
-  //},
+  {
+    id: 3,
+    name: 'Luigi Banzi',
+    age: 33,
+    classroom: '5B'
+  }
 ];
 
 // Recuperare la classe dello studente Marco Lanci
+
+const studentsClass = students_2.find(s => s.name.toLowerCase() === 'marco lanci'.toLowerCase())?.classroom;
+console.log(studentsClass); 
